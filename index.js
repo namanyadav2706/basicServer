@@ -49,7 +49,7 @@ app.put('/student/:id', async (req,res)=>{
         student = await Candidate.findByIdAndUpdate(req.params.id, req.body , {new: true})
 
         return res.status(200).json({
-            message:"Student updated successfully",
+            message:"Student updated successfully!",
             student:student
         })
     }else{
